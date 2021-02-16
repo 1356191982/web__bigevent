@@ -1,0 +1,1 @@
+"use strict";function getUserInfo(){$.ajax({method:"GET",url:"my/userinfo",headers:{Authorization:localStorage.getItem("token")||""},success:function(e){console.log(e)}})}$(function(){getUserInfo()});

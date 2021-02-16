@@ -1,1 +1,1 @@
-"use strict";$.ajaxPrefilter(function(t){t.url="http://ajax.frontend.itheima.net/"+t.url,console.log(t.url)});
+"use strict";$.ajaxPrefilter(function(t){t.url="http://ajax.frontend.itheima.net/"+t.url});
