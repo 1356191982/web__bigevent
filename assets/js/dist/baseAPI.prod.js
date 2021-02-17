@@ -1,1 +1,1 @@
-"use strict";$.ajaxPrefilter(function(t){t.url="http://ajax.frontend.itheima.net/"+t.url});
+"use strict";$.ajaxPrefilter(function(e){e.url="http://ajax.frontend.itheima.net/"+e.url,-1!==e.url.indexOf("/my/")&&(e.headers={Authorization:localStorage.getItem("token")||""}),e.complete=function(e){1===e.responseJSON.status&&"身份认证失败！"===e.responseJSON.message&&(localStorage.removeItem("token"),location.href="/login.html")}});
