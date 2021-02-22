@@ -25,7 +25,7 @@ function getUserInfo() {
         // },
         success: function (res) {
             // console.log(res)
-            console.log(res.data)  //用户数据
+            // console.log(res.data)  //用户数据
             if (res.status) return layui.layer.msg('获取用户信息失败')
             // 调用渲染头像的函数，将用户的数据传入
             xuanRanAvatar(res.data)
